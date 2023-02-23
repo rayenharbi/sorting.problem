@@ -1,0 +1,11 @@
+InsertionSort(A):
+  FOR i FROM 0 TO -1   DO
+    key = A[i]
+    j = i - 1
+    while j >= 0 and A[j] > key do
+      A[j + 1] = A[j]
+      j = j - 1
+    end while
+    A[j + 1] = key
+  end for
+  return A 
